@@ -34,7 +34,7 @@ public class DefaultWebSocketHandler implements WebSocketHandler {
             TextMessage textMessage = (TextMessage) message;
 
             webSocket.handleMessage(session, textMessage.getPayload());
-            webSocket.sendMessage(session, textMessage.getPayload());
+           // webSocket.sendMessage(session, textMessage.getPayload());
         }
     }
 

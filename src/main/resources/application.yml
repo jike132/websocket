@@ -5,6 +5,11 @@ spring:
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+    aop: #是否支持AOP
+      auto: true
+
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #对应mapper映射xml文件所在路径
   type-aliases-package: com.example.chart.entity  #对应实体类路径
