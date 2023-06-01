@@ -12,6 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 @SpringBootTest
 class ChartApplicationTests {
@@ -39,5 +41,14 @@ class ChartApplicationTests {
         bufferOpt.copy();
 
     }
+    @Test
+void fill(){
+        int a[]=new int[10];
+        Arrays.fill(a,10);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(a[i]);
+        }
+
+}
 
 }
